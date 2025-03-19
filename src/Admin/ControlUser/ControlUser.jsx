@@ -6,6 +6,7 @@ import { UsersContext } from "../../context/UsersContext";
 import { HiUsers } from "react-icons/hi2";
 
 const ControlUser = () => {
+  const API_URL = import.meta.env.VITE_API_URL;
   const { token, role } = useContext(UsersContext);
   const navigate = useNavigate();
   const [users, setUsers] = useState([]);
@@ -30,7 +31,7 @@ const ControlUser = () => {
 
     const fetchUsers = async () => {
       try {
-        const res = await fetch("http://localhost:5000/user/all", {
+        const res = await fetch(`${API_URL}/user/all`, {
           headers: { "auth-token": token },
         });
         const data = await res.json();
@@ -59,7 +60,7 @@ const ControlUser = () => {
     if (!window.confirm("⚠️ هل أنت متأكد من حذف هذا المستخدم؟")) return;
 
     try {
-      const res = await fetch(`http://localhost:5000/user/delete/${id}`, {
+      const res = await fetch(`${API_URL}/user/delete/${id}`, {
         method: "DELETE",
         headers: { "auth-token": token },
       });
@@ -95,7 +96,7 @@ const ControlUser = () => {
     setSavingUserId(editingUser._id); // تحديد المستخدم الذي يتم حفظ بياناته حاليًا
     try {
       const res = await fetch(
-        `http://localhost:5000/user/update/${editingUser._id}`,
+        `${API_URL}/user/update/${editingUser._id}`,
         {
           method: "PUT",
           headers: {
