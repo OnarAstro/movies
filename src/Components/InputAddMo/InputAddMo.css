@@ -1,0 +1,229 @@
+.inputAddMo {
+  height: 100%;
+  width: 100%;
+  padding: 2rem 0rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.inputAddMo .form-inputAddMo {
+  width: 70rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/* box-inputAddMo-three */
+
+.inputAddMo .form-inputAddMo .box-inputAddMo-three {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  width: 100%;
+
+
+}
+
+.inputAddMo .form-inputAddMo .box-inputAddMo-three .min-box {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: var(--app-back);
+  width: 100%;
+  height: 3rem;
+  border-radius: 0.5rem;
+  position: relative;
+  z-index: 1;
+
+}
+
+.inputAddMo .form-inputAddMo .box-inputAddMo-three .min-box input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  background-color: var(--app-back);
+  color: var(--second-text);
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--primary-text);
+
+}
+
+.inputAddMo .form-inputAddMo .box-inputAddMo-three .min-box input::placeholder {
+
+
+}
+
+/* box-inputAddMo-two */
+
+.inputAddMo .form-inputAddMo .box-inputAddMo-two {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  width: 100%;
+
+}
+
+.inputAddMo .form-inputAddMo .box-inputAddMo-two .min-box {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: var(--app-back);
+  width: 100%;
+  height: 3rem;
+  border-radius: 0.5rem;
+  position: relative;
+  z-index: 1;
+
+}
+
+.inputAddMo .form-inputAddMo .box-inputAddMo-two .min-box input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  background-color: var(--app-back);
+  color: var(--second-text);
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--primary-text);
+
+}
+
+.inputAddMo .form-inputAddMo .box-inputAddMo-two .min-box input::placeholder {
+
+
+}
+
+.inputAddMo .form-inputAddMo .box-inputAddMo-two  .min-box select {
+  height: 120%;
+  width: 100%;
+  border: none;
+  background-color: var(--app-back);
+  color: var(--second-text);
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--primary-text);
+  flex: 1;
+}
+
+/* box-inputAddMo-one */
+
+.inputAddMo .form-inputAddMo .box-inputAddMo-one {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 50%;
+
+}
+
+.inputAddMo .form-inputAddMo .box-inputAddMo-one .min-box {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: var(--app-back);
+  width: 100%;
+  height: 3rem;
+  border-radius: 0.5rem;
+  position: relative;
+  z-index: 1;
+
+}
+
+.inputAddMo .form-inputAddMo .box-inputAddMo-one .min-box input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  background-color: var(--app-back);
+  color: var(--second-text);
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--primary-text);
+
+}
+
+.inputAddMo .form-inputAddMo .box-inputAddMo-one .min-box input::placeholder {
+
+}
+
+
+
+/* box-button */
+
+.inputAddMo  .box-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  height: 3rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+
+}
+
+.inputAddMo .box-button button {
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;  
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding: 0.7rem 2.5rem;
+  font-size: 1.5rem;
+}
+
+.inputAddMo .box-button button.update {
+  color: var(--primary-color);
+  background-color: var(--app-back);
+  border: 1px solid var(--primary-color);
+
+
+}
+
+
+.inputAddMo .box-button button.cancel {
+  color: var(--primary-red);
+  background-color: var(--primary-red-back);
+  border: 1px solid var(--primary-red);
+}
+
+.inputAddMo .box-button button.cancel:hover {
+  color: var(--app-back);
+  background-color: var(--primary-red);
+  border: 1px solid var(--app-back);
+}
+
+
+.inputAddMo .box-button button.update:hover {
+  color: var(--app-back);
+  background-color: var(--primary-color);
+  border: 1px solid var(--app-back);
+}

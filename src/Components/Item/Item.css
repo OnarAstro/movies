@@ -1,0 +1,235 @@
+
+
+/* box-card-popular */
+
+
+
+.card-popular {
+  /* width: 100%; */
+  height: 18rem;
+  padding: 1rem;
+  background-color: var(--primary-back);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  overflow: hidden;
+}
+
+
+/* box-img-popular */
+
+.card-popular .box-img-popular {
+  height: 60%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-popular .box-img-popular img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* box-heart-popular */
+
+.card-popular .box-heart-popular {
+  height: 45px;
+  width: 45px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--primary-red-back);
+  transition: all 0.3s ease-in-out;
+}
+
+.card-popular .box-heart-popular:hover {
+  box-shadow: 0px 0px 10px -3px var(--primary-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.card-popular .box-heart-popular .heart-popular {
+  color: var(--primary-red);
+  font-size: 1.5rem;
+  cursor: pointer;
+
+}
+
+/* box-icon-popular */
+
+.card-popular .box-icon-popular {
+  width: 75px;
+  height: 55px;
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  /* transform: translate(-50%, -50%); */
+  border-radius: 10px 0 0 0 ;
+  text-align: center;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--primary-back);
+  animation: rightinleft 0.5s ease-in-out alternate ;
+}
+
+.card-popular .box-icon-popular .min-icon-popular {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-color);
+  background: linear-gradient(0deg, var(--primary-color) 0%, rgba(253, 187, 45, 0) 100%);
+  transition: all 0.3s ease-in-out;
+
+}
+
+
+.card-popular .box-icon-popular .min-icon-popular:hover {
+  background-color: var(--primary-red);
+  box-shadow: 0px 0px 10px -3px var(--primary-color);
+
+}
+
+.card-popular .box-icon-popular .min-icon-popular .icon-popular {
+  font-size: 1.5rem;
+  color: var(--primary-back);
+  transition: all 0.3s ease-in-out;
+}
+
+.card-popular .box-icon-popular .min-icon-popular:hover .icon-popular {
+  color: var(--primary-color);
+}
+
+
+/* box-text-popular */
+
+.card-popular .box-text-popular {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 0;
+
+}
+
+/* card-title-popular */
+
+.card-popular .box-text-popular .card-title-popular {
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+}
+
+.card-popular .box-text-popular .card-title-popular p {
+  font-size: 1.1rem;
+  color: var(--primary-text);
+
+}
+
+/* box-star-popular */
+
+.card-popular .box-text-popular .box-star-popular {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card-popular .box-text-popular .box-star-popular .star-popular {
+  font-size: 1rem;
+  color: var(--primary-color);
+}
+
+.card-popular .box-text-popular .box-star-popular span {
+  font-size: 1rem;
+  color: var(--second-text);
+}
+
+/* box-category-popular */
+
+.card-popular .box-text-popular .box-category-popular {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 0.2rem;
+}
+
+.card-popular .box-text-popular .box-category-popular .name {
+  color: var(--second-text);
+  font-size: 0.9rem;
+  text-transform: capitalize;
+}
+
+.card-popular .box-text-popular .box-category-popular .dot {
+  background-color: var(--primary-color);
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+}
+
+
+/*  */
+
+@media (max-width: 1150px) {
+  .card-popular {
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+    gap: 0.5rem;
+  }
+
+  .card-popular .box-img-popular {
+    height: 100px;
+  }
+
+  .card-popular .box-icon-popular {
+    width: 50px;
+    height: 45px;
+  }
+
+  .card-popular .box-icon-popular .min-icon-popular {
+    width: 40px;
+    height: 38px;
+  }
+  
+  .card-popular .box-heart-popular {
+    height: 30px;
+    width: 30px;
+  }
+  
+  .card-popular .box-heart-popular .heart-popular {
+    font-size: 1rem;
+  }
+
+  .card-popular .box-text-popular .card-title-popular p {
+    font-size: 0.9rem;
+  }
+  .card-popular .box-text-popular .box-star-popular span {
+    font-size: 0.8rem;
+  }
+  .card-popular .box-text-popular .box-category-popular .name {
+    font-size: 0.7rem;
+  }
+  
+}

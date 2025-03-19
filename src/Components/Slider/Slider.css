@@ -1,0 +1,240 @@
+.slider {
+  width: 7.5rem;
+  height: 90dvh;
+  background-color: var(--primary-back);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  padding: 2.5rem 0.5rem;
+  /* box-shadow: 0px 0px 10px -3px var(--primary-color); */
+  z-index: 1;
+  border-radius: 1.5rem;
+
+}
+
+.slider .box-slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/*  */
+
+.slider .box-slider .box-icon {
+  position: relative;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.slider .box-slider .box-icon::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-color);
+  border-radius: 30% 0% 80% ;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  /* background: var(--primary-color);
+  background: linear-gradient(0deg, var(--primary-color) 0%, var(--primary-back)  100%); */
+}
+
+
+.slider .box-slider .box-icon::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--second-text);
+  border-radius: 60% 60% 0% ;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  /* background: var(--second-text);
+  background: linear-gradient(0deg, var(--second-text) 0%, var(--primary-text)  100%); */
+}
+
+.slider .box-slider .box-icon .icon {
+  font-size: 2rem;
+}
+
+/*  */
+
+.slider .box-slider .menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+}
+
+.slider .box-slider .menu-list .li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: .3s;
+  color: var(--primary-text);
+}
+
+.slider .box-slider .menu-list .li:hover {
+  border-radius: 10px;
+
+  box-shadow: 0px 0px 10px -3px var(--primary-color);
+
+
+  background-color: var(--primary-color);
+  color: var(--primary-back);
+}
+
+.slider .box-slider .menu-list .li.active {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  color: var(--primary-back);
+  box-shadow: 0px 0px 10px -3px var(--primary-color);
+
+}
+
+.slider .box-slider .menu-list .li .icon {
+  font-size: 2.2rem;
+}
+
+/*  */
+
+.slider .box-slider .logout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: .3s;
+  color: var(--primary-red);
+  transition: all .3s ease-in-out;
+  /* border-radius: 10px; */
+}
+
+
+.slider .box-slider .logout:hover {
+  background-color: var(--primary-red);
+  border-radius: 10px;
+  color: var(--primary-back);
+  box-shadow: 0px 0px 10px -3px var(--primary-red);
+}
+
+.slider .box-slider .logout.active {
+  background-color: var(--primary-red);
+  border-radius: 10px;
+  color: var(--primary-back);
+  box-shadow: 0px 0px 10px -3px var(--primary-red);
+}
+
+.slider .box-slider .logout .icon {
+  font-size: 2.2rem;
+}
+
+
+.slider .box-slider .login2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: .3s;
+  color: var(--primary-color);
+  transition: all .3s ease-in-out;
+  /* border-radius: 10px; */
+}
+
+
+.slider .box-slider .login2:hover {
+  background-color: var(--primary-text);
+  border-radius: 10px;
+  color: var(--primary-back);
+  box-shadow: 0px 0px 10px -3px var(--primary-text);
+}
+
+.slider .box-slider .login2.active {
+  background-color: var(--primary-text);
+  border-radius: 10px;
+  color: var(--primary-back);
+  box-shadow: 0px 0px 10px -3px var(--primary-text);
+}
+
+
+.slider .box-slider .login2 .icon {
+  font-size: 2.2rem;
+}
+
+
+
+
+
+@media (max-width: 1250px)  {
+  .slider {
+    width: 7rem;
+  }
+
+  .slider .box-slider .box-icon {
+    position: relative;
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .slider .box-slider .menu-list li {
+    padding: 0.4rem;
+}
+}
+
+
+
+@media (max-width: 666px) {
+  .slider {
+    width: 4rem;
+    border-radius: 0rem 1rem 1rem 0rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.slider .box-slider .box-icon {
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+}
+
+.slider .box-slider .box-icon .icon {
+  font-size: 1.5rem;
+}
+
+.slider .box-slider .menu-list li .icon {
+  font-size: 1.9rem;
+}
+
+.slider .box-slider .menu-list .li .icon {
+  font-size: 1.3rem;
+}
+.slider .box-slider .logout .icon {
+  font-size: 1.56rem;
+}
+.slider .box-slider .login2 .icon {
+  font-size: 1.56rem;
+}
+.slider .box-slider .menu-list {
+  gap: 1.5rem;
+
+}
+
+}
+

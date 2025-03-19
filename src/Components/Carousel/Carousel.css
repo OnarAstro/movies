@@ -1,0 +1,473 @@
+.carousel {
+  width: 100%;
+  height: 60dvh;
+  border-radius: 1rem;
+  overflow: hidden;
+  animation: load 0.5s ease-in-out alternate;
+}
+
+
+
+.carousel .cont-carousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* box-img */
+
+.carousel .cont-carousel .box-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  border-radius: 1rem;
+
+}
+
+.carousel .cont-carousel .box-img::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  z-index: 99;
+  left: 0;
+  opacity: 0.5;
+  border-radius: 1rem;
+
+}
+
+.carousel .cont-carousel .box-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+/* box-carousel */
+
+.carousel .cont-carousel .box-carousel {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* top-cont */
+
+.carousel .cont-carousel .box-carousel .top-cont {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  
+}
+
+/* left-box */
+
+
+.carousel .cont-carousel .box-carousel .top-cont .left-box {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  /* border-radius: 0px 30px 0px 0px; */
+} 
+
+/*  */
+
+.carousel .cont-carousel .box-carousel .top-cont .left-box .left-row {
+  background-color: var(--primary-color);
+  padding: 0.9rem;
+  border-radius: 10px;
+  
+}
+
+.carousel .cont-carousel .box-carousel .top-cont .left-box .left-row p {
+  font-size: 1.1rem;
+  /* font-weight: 600; */
+  color: var(--primary-back);
+  text-transform: capitalize;
+}
+
+/*  */
+
+.carousel .cont-carousel .box-carousel .top-cont .left-box .right-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.carousel .cont-carousel .box-carousel .top-cont .left-box .right-row p {
+  background-color: var(--primary-color);
+  padding: 0.9rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary-back);
+  text-transform: capitalize;
+}
+
+/* right-box */
+
+.carousel .cont-carousel .box-carousel .top-cont .right-box {
+  width: 100px;
+  border-radius: 0px 0px 0px 30px ;
+  background-color: var(--app-back);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.carousel .cont-carousel .box-carousel .top-cont .right-box .box-heart {
+  padding: 1rem;
+  width: 75%;
+  height: 90%;
+  border-radius: 1rem;
+  background-color: var(--primary-red-back);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.carousel .cont-carousel .box-carousel .top-cont .right-box .box-heart .heart {
+  font-size: 2rem;
+  color: var(--primary-red);
+  scale: 1.2;
+  transition: all 0.3s ease-in-out;
+}
+
+
+/* box-center */
+
+.carousel .cont-carousel .box-carousel .box-center {
+  text-align: end;
+  padding-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  transition: all 0.3s ease-in-out;
+}
+
+.carousel .cont-carousel .box-carousel .box-center button {
+  background: var(--primary-text);
+  background: linear-gradient(0deg, var(--primary-text) 0%, var(--primary-back)  100%);
+  padding: 1rem;
+  border-radius: 10px;
+  color: var(--primary-back);
+  font-weight: 600;
+  text-align: end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.carousel .cont-carousel .box-carousel .box-center button:hover {
+  background: var(--primary-text);
+  background: linear-gradient(0deg, var(--primary-text) 0%, var(--primary-color)  100%);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 0px 10px -3px var(--primary-color);
+
+}
+
+
+.carousel .cont-carousel .box-carousel .box-center button .icon-arrow {
+  color: var(--primary-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.carousel .cont-carousel .box-carousel .box-center button:hover .icon-arrow {
+  color: var(--primary-back);
+  transition: all 0.3s ease-in-out;
+}
+
+
+/* box-bottom */
+
+.carousel .cont-carousel .box-carousel .box-bottom {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  gap: 2.5rem;
+  width: 100%;
+  height: 150px;
+}
+
+
+/* box-btn */
+
+.carousel .cont-carousel .box-carousel .box-bottom .box-btn {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  gap: 1rem;
+  background-color: var(--app-back);
+  border-radius: 0px 1rem 0px 0px;
+  height: 60%;
+  width: 300px;
+}
+
+.carousel .cont-carousel .box-carousel .box-bottom .box-btn button {
+  background: var(--primary-color);
+  background: linear-gradient(0deg, var(--primary-color) 0%, rgba(253, 187, 45, 0) 100%);
+  padding: 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 150px;
+  height: 30px;
+  border-radius: 1rem;
+  color: var(--primary-back);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  animation: leftinright 0.5s ease-in-out  alternate ;
+}
+
+.carousel .cont-carousel .box-carousel .box-bottom .box-btn button:hover {
+  background: var(--primary-red);
+  background: linear-gradient(0deg, var(--primary-red) 0%, rgba(253, 187, 45, 0) 100%);
+  transition: all 0.3s ease-in-out;
+  color: var(--primary-text);
+  /* box-shadow: 0px 0px 10px -3px var(--primary-red-back); */
+
+}
+
+
+.carousel .cont-carousel .box-carousel .box-bottom .box-btn button .play {
+  font-size: 1.5rem;
+
+}
+
+/* box-text */
+
+.carousel .cont-carousel .box-carousel .box-bottom .box-text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: end;
+  gap: 1.2rem;
+  width: 100%;
+  padding: 1rem;
+  /* padding-left: 2rem; */
+  /* position: absolute; */
+}
+
+.carousel .cont-carousel .box-carousel .box-bottom .box-text p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--primary-text);
+
+}
+
+.carousel .cont-carousel .box-carousel .box-bottom .box-text span {
+  font-size: 1rem;
+  color: var(--second-text);
+  width: 90%;
+  margin-bottom: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+
+/*  */
+@media (max-width: 1075px) {
+  .carousel .cont-carousel .box-carousel .box-bottom {
+    height: 50%;
+  }
+  .carousel .cont-carousel .box-carousel .box-bottom .box-btn button {
+    padding: 1rem 1rem;
+    width: 100px;
+    height: 30px;
+    font-size: 0.7rem;
+  }
+  .carousel .cont-carousel .box-carousel .box-bottom .box-btn {
+    gap: 1rem;
+    width: 250px;
+    height: 75px;
+  align-items: end;
+  justify-content: end;
+}
+.carousel .cont-carousel .box-carousel .top-cont .left-box .left-row p {
+  font-size: 0.9rem;
+}
+.carousel .cont-carousel .box-carousel .top-cont .left-box .right-row p {
+  padding: 0.6rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+}
+@media (max-width: 915px) {
+  .carousel .cont-carousel .box-carousel .box-bottom .box-btn button {
+    padding: 1rem 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100px;
+    height: 30px;
+    font-size: 0.7rem;
+  }  
+  .carousel .cont-carousel .box-carousel .box-bottom .box-btn button .play {
+    font-size: 1rem;
+}
+
+.carousel .cont-carousel .box-carousel .box-bottom .box-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: var(--app-back);
+    border-radius: 0px 1rem 0px 0px;
+    width: 40%;
+}
+
+.carousel .cont-carousel .box-carousel .top-cont .left-box .left-row {
+  padding: 0.7rem;
+}
+
+.carousel .cont-carousel .box-carousel .top-cont .left-box .left-row p {
+  font-size: 0.9rem;
+}
+.carousel .cont-carousel .box-carousel .top-cont .left-box .right-row p {
+  padding: 0.7rem;
+  font-size: 0.9rem;
+}
+
+.carousel .cont-carousel .box-carousel .top-cont .right-box {
+  width: 75px;
+}
+
+.carousel .cont-carousel .box-carousel .top-cont .right-box .box-heart {
+  padding: 0.8rem;
+  width: 75%;
+  height: 80%;
+}
+
+.carousel .cont-carousel .box-carousel .top-cont .right-box .box-heart .heart {
+  font-size: 1.5rem;
+}
+
+.carousel .cont-carousel .box-carousel .box-center button {
+  padding: 0.8rem;
+  font-size: 0.9rem;
+}
+
+}
+
+
+@media (max-width: 645px) {
+  .carousel .cont-carousel .box-carousel .box-bottom {
+    height: 30%;
+}
+  .carousel .cont-carousel .box-carousel .top-cont .left-box {
+    /* flex-direction: column; */
+    gap: 1rem;
+  }
+
+  .carousel .cont-carousel .box-carousel .box-bottom .box-text {
+    height: 100%;
+    justify-content: end;
+    gap: 0.7rem;
+    width: 100%;
+    padding: 1rem;
+    /* padding-bottom: 4rem; */
+
+  }
+
+  .carousel .cont-carousel .box-carousel .box-bottom .box-text p {
+    font-size: 1rem;
+  }
+
+  .carousel .cont-carousel .box-carousel .box-bottom .box-text span {
+    font-size: 0.7rem;
+    margin-bottom: 0;
+
+  }
+}
+@media (max-width: 477px) {
+  .carousel {
+    height: 30dvh;
+  }
+  .carousel .cont-carousel .box-carousel .box-bottom {
+    gap: 0.5rem;
+    flex-direction: column-reverse;
+    height: 100%;
+    justify-content: center;
+    padding: 0.5rem;
+    padding: 0rem 1rem;
+
+  }
+  .carousel .cont-carousel .box-carousel .box-bottom .box-text p {
+    font-size: 0.7rem;
+}
+
+  .carousel .cont-carousel .box-carousel .box-bottom .box-text span {
+    width: 100%;
+    font-size: 0.5rem;
+  }
+
+  .carousel .cont-carousel .box-carousel .top-cont .right-box {
+    width: 50px;
+}
+.carousel .cont-carousel .box-carousel .box-bottom .box-text {
+  padding-bottom: 0rem;
+  height: 100%;
+  justify-content: end;
+  padding: 0;
+
+}
+
+.carousel .cont-carousel .box-carousel .box-center {
+  display: none;
+}
+.carousel .cont-carousel .box-carousel .box-bottom {
+
+}
+.carousel .cont-carousel .box-carousel .box-bottom .box-btn {
+  width: 90px;
+  border-radius: 1rem 0 0 0;
+  background-color: transparent;
+}
+
+.carousel .cont-carousel .box-carousel .box-bottom .box-btn button {
+  height: 25px;
+  width: 65px;
+  font-size: 0.4rem;
+  text-align: center;
+  padding: 0.4rem;
+}
+.carousel .cont-carousel .box-carousel .box-bottom .box-btn button .play {
+  font-size: 1rem;
+}
+.carousel .cont-carousel .box-carousel .top-cont .left-box .left-row p {
+  font-size: 0.7rem;
+}
+.carousel .cont-carousel .box-carousel .top-cont .left-box .right-row p {
+  padding: 0.6rem;
+  font-size: 0.5rem;
+}
+
+.carousel .cont-carousel .box-carousel .top-cont .left-box {
+  justify-content: start;
+}
+
+.carousel .cont-carousel .box-carousel .top-cont .left-box .left-row {
+    display: none;
+}
+
+}

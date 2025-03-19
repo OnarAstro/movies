@@ -1,0 +1,109 @@
+.popular {
+  width: 100%;
+  height: 40dvh;
+  overflow: hidden;
+  padding-top: 2rem;
+}
+
+.popular .box-popular {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* title-popular  */
+
+.popular .box-popular .title-popular {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.popular .box-popular .title-popular h1 {
+  font-size: 1.5rem;
+  color: var(--primary-text);
+  
+}
+
+.popular .box-popular .title-popular .btn-popular {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popular .box-popular .title-popular .btn-popular button {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.popular .box-popular .title-popular .btn-popular button:hover {
+  text-decoration: underline;
+}
+
+.box-card-popular {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1150px) {
+  .popular { 
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding-top: 2rem;
+    
+  }
+  .box-card-popular {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 915px) {
+  .popular {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding-top: 2rem;
+  }
+  .box-card-popular {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 500px) {
+  .box-card-popular {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    padding-left: 0rem;
+    padding-top: 0.5rem;
+    padding-right: 0rem;
+  }
+
+  .popular .box-popular .title-popular h1 {
+    font-size: 0.9rem;
+    color: var(--primary-text);
+    
+  }
+  .popular .box-popular .title-popular .btn-popular button {
+    color: var(--primary-color);
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+}

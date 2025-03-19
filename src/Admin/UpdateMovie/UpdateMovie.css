@@ -1,0 +1,258 @@
+.update-movie {
+  height: 100%;
+  width: 100%;
+  padding: 2rem 3rem;
+  padding-left: 9.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.update-movie .box-update {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 70rem;
+  height: 100%;
+  gap: 2rem;
+}
+
+.update-movie .box-update input.search-update-movie {
+  width: 100%;
+  height: 3rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--primary-text);
+  outline: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: var(--second-text);
+  background-color: var(--app-back);
+  
+
+}
+
+/* box-img */
+
+.update-movie .box-update .box-img {
+  width: 100%;
+  height: 40dvh;
+  position: relative;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 1px solid var(--primary-text);
+  position: relative;
+  z-index: 1;
+  margin-bottom: 1rem;
+
+}
+
+.update-movie .box-update .box-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 1rem;
+
+}
+
+.update-movie .box-update .box-img .box-text {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+  width: 50%;
+  height: 60%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-around;
+  gap: 1.5rem;
+  border-radius: 1rem ;
+  padding: 1rem;
+  background-color: var(--primary-color);
+}
+
+.update-movie .box-update .box-img .box-text h1 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: var(--primary-back);
+}
+
+.update-movie .box-update .box-img .box-text p {
+  font-size: 1.2rem;
+  color: var(--second-text);
+  text-transform: lowercase;
+  font-weight: 500;
+
+}
+
+.update-movie .box-update .box-img .box-text .btn-add {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--primary-back);
+  text-transform: capitalize;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-size: 1.2rem;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  margin-top: 0.5rem;
+
+}
+
+/* box-card */
+
+.update-movie .box-update .box-card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  width: 1120px;
+  height: 100%;
+  max-height: 600px;
+  border-radius: 10px;
+  border: 1px solid var(--primary-text);
+  padding: 2rem;
+  overflow: auto;
+  background-color: var(--primary-back);
+}
+
+/* box-title */
+
+.update-movie .box-update .box-card .box-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 2rem;
+  border-bottom:  1px solid var(--primary-color);
+  padding-bottom: 1.5rem;
+
+
+}
+
+.update-movie .box-update .box-card .box-title p {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: var(--primary-color);
+  letter-spacing: 0.1rem;
+  flex: 1;
+  text-align: center;
+
+}
+
+/* box-info */
+
+.update-movie .box-update .box-card .box-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 2rem;
+  border-bottom:  1px solid var(--primary-color);
+  padding-bottom: 1.5rem;
+}
+
+.update-movie .box-update .box-card .box-info p {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: var(--primary-text);
+  letter-spacing: 0.1rem;
+  flex: 1;
+  text-align: center;
+
+}
+
+.update-movie .box-update .box-card .box-info p img {
+  width: 4.5rem;
+  height: 3.5rem;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 6px;
+
+}
+
+.update-movie .box-update .box-card .box-info p .box-edit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+}
+
+.update-movie .box-update .box-card .box-info p .box-edit button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 1rem !important;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-size: 1.2rem;
+  rotate: -45deg;
+
+
+}
+
+.update-movie .box-update .box-card .box-info p .box-edit button.edit {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  background-color: var(--primary-back);
+}
+
+.update-movie .box-update .box-card .box-info p .box-edit button.edit:hover {
+  color: var(--primary-back);
+  border: 1px solid var(--primary-color);
+  background-color: var(--primary-color);
+  rotate: -90deg;
+}
+
+.update-movie .box-update .box-card .box-info p .box-edit button.delete {
+  color: var(--primary-red);
+  border: 1px solid var(--primary-red);
+  background-color: var(--primary-red-back);
+}
+
+.update-movie .box-update .box-card .box-info p .box-edit button.delete:hover {
+  color: var(--primary-back);
+  border: 1px solid var(--primary-red);
+  background-color: var(--primary-red);
+  rotate: -90deg;
+}
+
+/* box-input */
+
+
+.update-movie .box-update .box-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-top:  1px solid var(--primary-color);
+  padding-bottom: 1.5rem;
+  gap: 1rem;
+  flex-direction: column;
+
+}

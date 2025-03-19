@@ -1,0 +1,210 @@
+.watching {
+  width: 100%;
+  height: 52vh;
+}
+
+.watching .box-watching {
+  background-color: var(--primary-back);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  /* align-items: start; */
+  justify-content: space-around;
+  /* gap: 1rem; */
+  padding: 1.2rem 1.2rem;
+  height: 100%;
+  width: 100%;
+}
+
+/* title-watch */
+
+.watching .box-watching .title-watch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.watching .box-watching .title-watch h3 {
+  color: var(--primary-text);
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+
+.watching .box-watching .title-watch .icon {
+  font-size: 1.8rem;
+  color: var(--primary-text);
+}
+
+/* box-card */
+
+.watching .box-watching .box-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 1.5rem;
+}
+
+.watching .box-watching .box-card .card {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  height: 150px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* box-img */
+
+.watching .box-watching .box-card .card .box-img {
+  width: 60%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  border-radius: 1rem;
+}
+
+.watching .box-watching .box-card .card .box-img::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-back);
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 1rem;
+  opacity: 0.3;
+  z-index: 2;
+}
+
+.watching .box-watching .box-card .card .box-img img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  object-fit: cover;
+  z-index: -1;
+  border-radius: 1rem;
+
+}
+
+.watching .box-watching .box-card .card .box-img .box-icon {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: var(--primary-color); */
+  background: var(--primary-color);
+  background: linear-gradient(0deg, var(--primary-color) 0%, rgba(253, 187, 45, 0) 100%);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  z-index: 3;
+}
+
+.watching .box-watching .box-card .card .box-img .box-icon:hover {
+  background: var(--primary-color);
+  background: linear-gradient(0deg, var(--primary-color) 0%, var(--primary-back) 100%);
+  transition: all 0.3s ease-in-out ;
+}
+
+.watching .box-watching .box-card .card .box-img .box-icon .icon {
+  font-size: 1.5rem;
+  color: var(--primary-text);
+  transition: all 0.3s ease-in-out;
+}
+
+.watching .box-watching .box-card .card .box-img .box-icon:hover .icon {
+  color: var(--primary-back);
+}
+
+/* box-text */
+
+.watching .box-watching .box-card .card .box-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  width: 40%;
+}
+
+
+/* card-title */
+
+.watching .box-watching .box-card .card .box-text .card-title {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.watching .box-watching .box-card .card .box-text .card-title h3 {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+
+/* box-category */
+
+.watching .box-watching .box-card .card .box-text .box-category {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 0.2rem;
+}
+
+.watching .box-watching .box-card .card .box-text .box-category .name {
+  color: var(--second-text);
+  font-size: 0.9rem;
+  text-transform: capitalize;
+}
+
+.watching .box-watching .box-card .card .box-text .box-category .dot {
+  background-color: var(--primary-color);
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+}
+
+/* box-time */
+
+.watching .box-watching .box-card .card .box-text .box-time {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 0.5rem;
+}
+
+.watching .box-watching .box-card .card .box-text .box-time .star {
+  color: var(--primary-color);
+}
+
+.watching .box-watching .box-card .card .box-text .box-time .time {
+  color: var(--second-text);
+  font-size: 0.9rem;
+  text-transform: capitalize;
+}
+
+.watching .box-watching .box-card .card .box-text .box-time .dot {
+  background-color: var(--primary-color);
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+}
+
+/*  */
+
+
+@media (max-width: 1150px) {
+  .watching  {
+    display: none;
+}
+}

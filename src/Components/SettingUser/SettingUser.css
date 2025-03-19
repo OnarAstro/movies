@@ -1,0 +1,370 @@
+.setting-user {
+  height: 70vh;
+  width: 100%;
+  padding: 2rem 3rem;
+  padding-left: 9.5rem;
+  margin-top: 0rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.setting-user .box-setting-user {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 70rem;
+  height: 100%;
+  background-color: var(--primary-back);
+  border-radius: 1rem;
+  padding: 2rem 4rem;
+  overflow: hidden;
+}
+
+/* box-photo */
+
+.setting-user .box-setting-user .box-photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 35%;
+  height: 100%;
+  padding: 1rem;
+  padding-top: 2rem;
+  animation: leftinright 0.5s ease-in-out;
+
+}
+
+/* photo */
+
+.setting-user .box-setting-user .box-photo .photo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  z-index: 1;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+}
+
+.setting-user .box-setting-user .box-photo .photo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--primary-back);
+  opacity: 0.3;
+}
+
+.setting-user .box-setting-user .box-photo .photo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  padding: 10px;
+  border: 2px solid var(--primary-color);
+}
+
+.setting-user .box-setting-user .box-photo .photo .icon {
+  font-size: 3rem;
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid var(--primary-color);
+  position: absolute;
+  bottom: -8%;
+  right: 0%;
+  transform: translate(-50%, -50%);
+  color: var(--primary-color);
+  background-color: var(--primary-back);
+  box-shadow: 0px 0px 10px var(--primary-color);
+}
+
+/* text-photo */
+
+.setting-user .box-setting-user .box-photo .text-photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  animation: leftinright 0.5s ease-in-out;
+
+}
+
+.setting-user .box-setting-user .box-photo .text-photo h3 {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.setting-user .box-setting-user .box-photo .text-photo p {
+  color: var(--second-text);
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+/* box-update */
+
+.setting-user .box-setting-user .box-update {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+  animation: rightinleft 0.5s ease-in-out alternate;
+}
+
+
+
+
+/* title-update */
+
+.setting-user .box-setting-user .box-update .title-update {
+  background-color: var(--app-back);
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+}
+
+.setting-user .box-setting-user .box-update .title-update h3 {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+/* form-update */
+
+.setting-user .box-setting-user .box-update .form-update {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
+  gap: 1rem;
+  width: 100%;
+  /* height: 100%; */
+  padding: 1rem;
+}
+
+.setting-user .box-setting-user .box-update .form-update .box-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  height: 3rem;
+  border-radius: 0.5rem;
+  
+}
+
+.setting-user .box-setting-user .box-update .form-update .box-input .min-box {
+  background-color: var(--app-back);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border-radius: 0.5rem;
+}
+
+
+.setting-user .box-setting-user .box-update .form-update .box-input .min-box input {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: var(--primary-text);
+  font-size: 1rem;
+  /* text-transform: capitalize; */
+  font-weight: 500;
+  padding: 0.6rem;
+
+  border-radius: 0.5rem;
+}
+
+.setting-user .box-setting-user .box-update .form-update .box-input .min-box input::placeholder {
+  color: var(--second-text);
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.setting-user .box-setting-user .box-update .form-update .box-input .min-box input:focus {
+  /* border: 1px solid var(--primary-color); */
+  outline: 1px solid var(--primary-color);
+}
+
+/* box-button */
+
+.setting-user .box-setting-user .box-update .box-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  height: 3rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.setting-user .box-setting-user .box-update .box-button button {
+
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+
+}
+
+.setting-user .box-setting-user .box-update .box-button button.update {
+  background-color: var(--primary-color);
+  color: var(--primary-back);
+}
+
+.setting-user .box-setting-user .box-update .box-button button.cancel {
+  background-color: var(--primary-red-back);
+  color: var(--primary-red);
+}
+
+.setting-user .box-setting-user .box-update .box-button button:hover {
+  background-color: var(--primary-back);
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  box-shadow: 0px 0px 10px var(--primary-color);
+}
+
+
+.setting-user .box-setting-user .box-update .box-button button .update {
+  font-size: 1.5rem;
+}
+
+.setting-user .box-setting-user .box-update .box-button button .delete {
+  font-size: 1.5rem;
+}
+
+
+
+
+/*  */
+
+@media (max-width: 1050px) {
+  .setting-user .box-setting-user .box-photo .photo {
+    width: 10rem;
+    height: 10rem;
+  }
+}
+
+@media (max-width: 975px){
+  .setting-user .box-setting-user {
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+}
+
+.setting-user .box-setting-user .box-photo {
+
+  flex-direction: unset;
+  width: 100%;
+  gap: 1rem;
+}
+.setting-user .box-setting-user .box-photo .text-photo {
+  width: 50%;
+}
+
+.setting-user .box-setting-user .box-update {
+  width: 100%;
+  height: 100%;
+  gap: 1rem;
+  padding: 1rem
+}
+
+}
+
+
+@media (max-width: 600px) {
+  .setting-user {
+    height: 80vh;
+    width: 100%;
+    padding: 0rem;
+    padding-left: 5rem;
+    margin-top: 0rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.setting-user .box-setting-user .box-update .form-update .box-input {
+flex-direction: column;
+height: 100%;
+}
+
+.setting-user .box-setting-user .box-update {
+  gap: 1.5rem;
+  padding: 0rem;
+}
+.setting-user .box-setting-user .box-photo {
+  flex-direction: column;
+  padding: 0rem;
+
+}
+
+.setting-user .box-setting-user .box-photo .text-photo {
+  width: 100%;
+}
+
+.setting-user .box-setting-user .box-update .box-button button {
+  padding: 0rem 1.2rem;
+}
+.setting-user .box-setting-user .box-update .title-update h3 {
+  font-size: 1rem;
+}
+.setting-user .box-setting-user .box-update .form-update {
+  padding: 0rem;
+}
+
+.setting-user .box-setting-user .box-photo .photo .icon  {
+  border: 2px solid var(--primary-color);
+  bottom: -20%;
+
+}
+}
