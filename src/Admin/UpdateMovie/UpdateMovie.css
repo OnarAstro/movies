@@ -12,8 +12,8 @@
 .update-movie .box-update {
   display: flex;
   flex-direction: column;
-  align-items: start;
-  width: 70rem;
+  align-items: center;
+  width: 100%;
   height: 100%;
   gap: 2rem;
 }
@@ -123,7 +123,9 @@
   flex-direction: column;
   align-items: start;
   justify-content: start;
-  width: 1120px;
+  max-width: 900px;
+
+  width: 100%;
   height: 100%;
   max-height: 600px;
   border-radius: 10px;
@@ -139,7 +141,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 900px;
   margin-bottom: 2rem;
   border-bottom:  1px solid var(--primary-color);
   padding-bottom: 1.5rem;
@@ -164,7 +166,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 900px;
   margin-bottom: 2rem;
   border-bottom:  1px solid var(--primary-color);
   padding-bottom: 1.5rem;
@@ -255,4 +257,47 @@
   gap: 1rem;
   flex-direction: column;
 
+}
+
+
+@media (max-width: 600px) {
+  .update-movie {
+    padding: 2rem 0rem;
+    padding-left: 5rem;
+  }
+  .update-movie .box-update .box-img .box-text {
+    width: 85%;
+  }
+
+  .update-movie .box-update .box-img .box-text h1 {
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: var(--primary-back);
+}
+
+.update-movie .box-update .box-img .box-text p {
+    font-size: 0.9rem;
+}
+
+.update-movie .box-update .box-img .box-text .btn-add {
+  font-size: 1rem;
+}
+
+.update-movie .box-update .box-card .box-title p {
+  font-size: 1rem;
+}
+
+.update-movie .box-update .box-card .box-info p {
+  font-size: 1rem;
+}
+
+.update-movie .box-update .box-card .box-info p img {
+  width: 3rem;
+  height: 3.5rem;
+}
+
+.update-movie .box-update .box-card .box-info p .box-edit button {
+  font-size: 0.8rem !important;
+}
 }

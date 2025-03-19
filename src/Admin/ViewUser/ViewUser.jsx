@@ -4,6 +4,7 @@ import { UsersContext } from "../../context/UsersContext";
 import { PiGameControllerFill } from "react-icons/pi";
 
 const ViewUser = () => {
+  const API_URL = import.meta.env.VITE_API_URL;
   const { token, role } = useContext(UsersContext);
   const [users, setUsers] = useState([]);
   const [search, setSearch] = useState("");
@@ -30,7 +31,7 @@ const ViewUser = () => {
   const fetchUsers = useCallback(async () => {
     try {
       setLoading(true);
-      const res = await fetch("http://localhost:5000/user/all", {
+      const res = await fetch(`${API_URL}/user/all`, {
         headers: { "auth-token": token },
       });
       const data = await res.json();
